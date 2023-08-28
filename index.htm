@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfile</title>
+    <link rel="icon" href="/images/fav_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+    <!-- using nav bar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div style="box-shadow: 2px 5px 10px rgb(52, 86, 139); background: linear-gradient(rgb(52, 86, 139),20deg rgb(90,101,85 ));"
+            class="container-fluid">
+            <div class="profile">
+                Porτfΐℓe
+            </div>
+
+            <!-- using time refresh -->
+            <div class="watch">
+                <i class="fa fa-hourglass-end" aria-hidden="true"></i>
+                <span id="time"> </span>
+
+            </div>
+            <!-- end of time -->
+
+            <!-- <img class="portfile_icon" src="/images/icon_port.jpg" alt=""> -->
+            <button style="background-color: azure; box-shadow: 2px 5px 10px rgb(52, 86, 139);" class="navbar-toggler"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i>
+                        Home</a>
+                    <a class="nav-link" href="#skills"><i class="fa fa-tasks" aria-hidden="true"></i>
+                        Skills</a>
+                    <a class="nav-link" href="#projects"><i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+                        Project</a>
+                    <a class="nav-link" href="#abouts"> <i class="fa fa-info" aria-hidden="true"></i>
+                        About</a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- use a loader in window -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div class="container">
+
+        <div class="sub_contain">
+            <div class="mini_contain">
+                <div class="word">
+                    <h2 class="">Hi! I am.</h2>
+                    <span>N</span>
+                    <span>a</span>
+                    <span>r</span>
+                    <span>e</span>
+                    <span>s</span>
+                    <span>h</span>
+                </div><br>
+                <!-- <h4 class="name">
+                    Frontend Doveloper <div class="spinner-grow spinner-grow-sm" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </h4> -->
+                <!-- <div id="typing">I AM A <span>Web doveloper..</span></div> -->
+                <!-- download cv button -->
+                <h5 class="text_ani">
+                    <span id="text_main">Always be..</span>
+                    <div class="message">
+                        <div class="word1">close</div>
+                        <div class="word2">code</div>
+                        <div class="word3">create</div>
+                    </div>
+                </h5><br>
+                <!-- <div id="typing">I AM A <span>Web doveloper..</span></div> -->
+                <!-- download cv button -->
+                <div id="mydiv" onclick="mydivchange()">
+                    <a style="background: linear-gradient(rgb(52,86,139),rgb(19,27,17)); box-shadow: 2px 5px 10px rgb(52, 86, 139);"
+                        href="/document/cv june.pdf" id="downloadcv" onclick="mydownload()"
+                        class="download_cv_btn">Download CV</a>
+
+                    <script>
+                        function mydownload() {
+                            const text = "done";
+                            {
+                                alert("you want download cv");
+                            }
+                            document.getElementById("downloadcv").innerHTML = text;
+                        }</script>
+                    <!-- use the child image  -->
+                </div><br>
+                <a href="http://google.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href=""> <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </div>
+            <!-- use image -->
+            <div class="avatar">
+                <img src="/images/propic_1.jpg" alt="child">
+            </div>
+            <!-- use the slider rotater images -->
+            <!-- <div class="rotater">
+                <div class="cube">
+                    <div class="side back"></div>
+                    <div class="side left"></div>
+                    <div class="side right"></div>
+                    <div class="side top"></div>
+                    <div class="side bottom"></div>
+                    <div class="side front"></div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- using a skill progress -->
+    <br>
+    <div id="skills" class="container">
+        <h2>Skills <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        </h2>
+        <div class="skill_progress">
+
+            <br>
+            <label for="progress">C,C++</label>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Success striped example"
+                    style="width: 80%;background:linear-gradient(rgb(19,27,17),azure,rgb(52,86,139));"
+                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div> <strong>80%</strong>
+            </div><br>
+            <label for="progress">HTML</label>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped " role="progressbar" aria-label="Info striped example"
+                    style="width: 95%;background:linear-gradient(rgb(19,27,17),azure,rgb(52,86,139));"
+                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div> <strong>90%</strong>
+            </div><br>
+            <label for="progress">CSS</label>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Warning striped example"
+                    style="width: 75%;background:linear-gradient(rgb(19,27,17),azure,rgb(52,86,139));"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div><strong>75%</strong>
+            </div><br>
+            <label for="progress">javascript</label>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped " role="progressbar" aria-label="Danger striped example"
+                    style="width: 40%; background:linear-gradient(rgb(19,27,17),azure,rgb(52,86,139));"
+                    aria-valuenow="400" aria-valuemin="0" aria-valuemax="100"></div> <strong>40%</strong>
+            </div>
+            <br>
+            <label for="progress">My SQL</label>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-striped" role="progressbar"
+                    aria-label="Danger striped example"
+                    style="width: 20%;background:linear-gradient(rgb(19,27,17),azure,rgb(52,86,139));"
+                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div><strong>20%</strong>
+            </div>
+            <br>
+            <label for="progress">PHP</label>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-striped" role="progressbar"
+                    aria-label="Danger striped example"
+                    style="width: 10%;background:linear-gradient(rgb(19,27,17),azure,rgb(52,86,139));"
+                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div><strong>10%</strong>
+            </div>
+            <br>
+        </div>
+    </div>
+    <br>
+    <!-- define the Qualification -->
+    <div class="container">
+        <h1>Qualification <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        </h1>
+
+        <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'Education')">Education</button>
+            <button class="tablinks" onclick="openCity(event, 'expeirence')">expierence</button>
+
+        </div>
+
+        <div id="Education" class="tabcontent">
+            <div id="tab-1 active" class="tab-pane fade show p-0">
+                <div class="row gy-5 gx-4">
+                    <div class="col-sm-6 ">
+                        <h5>UI Designer</h5>
+                        <hr class="text-primary my-2">
+                        <p class="text-primary mb-1">2020-2022</p>
+                        <h6 class="mb-0"> begginer Software </h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>Apps Designer</h5>
+                        <hr class="text-primary my-2">
+                        <p class="text-primary mb-1">in progress</p>
+                        <h6 class="mb-0">online libarery</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="expeirence" class="tabcontent">
+            <div id="tab-2" class="tab-pane fade show p-0 acive">
+                <div class="row gy-5 gx-4">
+                    <div class="col-sm-6">
+                        <h5>UI Design Course</h5>
+                        <hr class="text-primary my-2">
+                        <p class="text-primary mb-1">2018-2023</p>
+                        <h6 class="mb-0">MDU University</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>Andriod Development</h5>
+                        <hr class="text-primary my-2">
+                        <p class="text-primary mb-1">2022</p>
+                        <h6 class="mb-0">MDU University</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>Web Design</h5>
+                        <hr class="text-primary my-2">
+                        <p class="text-primary mb-1">2018-2022</p>
+                        <h6 class="mb-0">MDU University</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>Apps Design</h5>
+                        <hr class="text-primary my-2">
+                        <p class="text-primary mb-1">in progress bigginer</p>
+                        <h6 class="mb-0">MDU University</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </div>
+    <br>
+    <br>
+    <!-- use a side icon bar // sidenavbar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="https://www.instagram.com/invites/contact/?i=cra7j7kv26dr&utm_content=n0hdnmi" id="social_insta"><i
+                class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/chhonker-naresh-kumar-44136a262/" id="social_link"><i
+                class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/channel/UCBCOofXHKF8Fv79hlZwu0gg" id="you_vid"><i class="fa fa-youtube-play"
+                aria-hidden="true"></i></a>
+        <a href="#" id="social_tweet"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+    <!-- using bio-graphy  -->
+
+    <div style="background:linear-gradient(rgb(19,27,17),rgb(52,86,139),azure); border-radius: 5px;"
+        class="container d-flex align-items-center justify-content-center flex-wrap">
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="/images/bio title.webp" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">project Title</h3>
+                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Explicabo
+                            sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                        <input type="button" value="more" class="more_btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="/images/bio_title.jpg" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Developer Biography</h3>
+                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Explicabo
+                            sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                        <input type="button" value="more" class="more_btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="/images/bio title.webp" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Blogs</h3>
+                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Explicabo
+                            sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                        <input type="button" value="more" class="more_btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- using projects  -->
+    <!-- Projects Start -->
+    <!-- devicel look -->
+    <div id="projects" class="container">
+        <h2>My projects <i class="fa fa-angellist" aria-hidden="true"></i>
+        </h2>
+        <div class="sub_container">
+            <!-- use the project card -->
+            <div class="store_card">
+                <h4>E-lib</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, voluptates?</p>
+                <img src="/images/play apple icon.jpg" alt="play_apple"><br>
+                <a href="#2"><i class="fa fa-android" aria-hidden="true"></i>playstore</a>
+                <a href="#3"><i class="fa fa-apple" aria-hidden="true"></i>Ios </a>
+                <a href="http://e-libmunna.netlify.app/"><i class="fa fa-eye"></i></a>
+
+            </div>
+            <!-- device look -->
+            <div class="smartphone_look">
+                <div class="phone_content">
+                    <iframe class="phone_look" src="https://e-libmunna.netlify.app/"
+                        style="width:100%;border:none;height:100%"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+    <br>
+    <!-- services -->
+    <!-- use service box 2 -->
+    <div class="container">
+        <h1>Services <i class="fa fa-globe" aria-hidden="true"></i>
+        </h1>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div style="background-image:url(/images/webdesign.jpg); background-size: cover;" class="service_box">
+                    <div class="service_icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h3>Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Deleniti, ducimus Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div style="background-image:url(/images/web.jpg); background-size: cover;" class="service_box">
+                    <div class="service_icon">
+                        <i class="fa fa-weibo"></i>
+                    </div>
+                    <h3>Web</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Deleniti, ducimus Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div style="background-image:url(/images/desinger.jpg); background-size: cover;" class="service_box">
+                    <div class="service_icon">
+                        <i class="fa fa-apple"></i>
+                    </div>
+                    <h3>Designer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Deleniti, ducimus Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div style="background-image:url(/images/ui\ ux.webp); background-size: cover;" class="service_box">
+                    <div class="service_icon">
+                        <i class="fa fa-sort-alpha-desc"></i>
+                    </div>
+                    <h3>UI Designer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Deleniti, ducimus Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="security" class="container">
+        <div class="security_rule">
+            <h4>welcome to yes-chat|</h4>
+            <img src="/images/chat_gif3.gif" alt="security picture">
+            <p>
+             At the start of a conversation, the bot should introduce itself
+            with a short description as the user might not be familiar with the chatbot or it's working.</p>
+            <img src="/images/chat_gif.gif" alt="picture complete security">
+            <p>ask me any question? click on yes!-chat icon <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </p>
+        </div>
+    </div>
+    <!-- about us -->
+    <div id="abouts" class="container">
+        <h2>About us <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </h2>
+        <div class="contact_form">
+            <form action="connect.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" name="Name" id="name" placeholder="enter Name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="enter email id">
+                <label for="phone">Phone number</label>
+                <input type="number" name="number" placeholder="phone number" id="number">
+                <label for="textarea">Message</label>
+                <textarea name="message" id="text_message" cols="10" rows="5"
+                    placeholder="write any message"></textarea>
+                <input type="button" class="contact_btn" value="submit">
+            </form>
+        </div>
+
+    </div>
+    <!-- <div class="item_container">
+            <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia a, maiores hic eum
+                adipisci optio veniam! Labore earum unde distinctio!</div>
+            <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, assumenda.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consequuntur rem beatae
+                natus tenetur vero reiciendis quia velit, ullam cumque illum cupiditate iusto quos recusandae!</div>
+        </div> -->
+    <br>
+    <div class="container">
+        <div class="faders">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+
+        <div class="items">
+            <div class="entry">
+                <p class="name">Naresh</p>
+                <img src="data:image/jpeg;base64,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"
+                    alt="dovelopers" />
+                <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+            </div>
+            <div class="entry">
+                <p class="name">yashika</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQD486V9pvNWTAYRilj5FAxeadDwgQKiXL1g&usqp=CAU"
+                    alt="dovelopers" />
+                <p class="quote">"Man, I think this app freaking rocks and stuff. Dude. i am data scientist"</p>
+            </div>
+            <div class="entry">
+                <p class="name">raviranjan</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSpzT5R0JKV1m7AYdRPe9vXm7o4zKtXVQRRftwlr8ePSesj9qmvZ38xXUPA5ZlXKeHn9w&usqp=CAU"
+                    alt="dovelopers" />
+                <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+            </div>
+            <div class="entry">
+                <p class="name">Alok Ratan Maurya</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5qZWrKpx9mJWfLUk-SlGC9F6ME43mlmLtEAy4j_xpD59KcJGmn4sAJGdJ1XDiCmbukAM&usqp=CAU"
+                    alt="dovelopers" />
+                <p class="quote">"Hi! guys i am Alok WCTM. Software Eng"</p>
+            </div>
+            <div class="entry">
+                <p class="name">laishram makey</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2H1g2xTzBukSuVPcN1rrcFeGfeW48CDH1mM-1VgoA9M9sZ_bPOzkn5_zwGrZzPmcukxA&usqp=CAU"
+                    alt="dovelopers" />
+                <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+            </div>
+            <div class="entry">
+                <p class="name">himanshu</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoQKjfc_Bhe608AdOYrg1Yd51n-fZPXuIXrMvGRKcnTW3go5eRfU5ltxc7JLqO3Covnn4&usqp=CAU"
+                    alt="dovelopers" />
+                <p class="quote">"Man, I think this app freaking rocks and stuff. Dude. i am fullstack app doveloper"</p>
+            </div>
+            <div class="entry">
+                <p class="name">Naresh kumar</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOH2aZnIHWjMQj2lQUOWIL2f4Hljgab0ecZQ&usqp=CAU"
+                    alt="dovelopers" />
+                <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+            </div>
+            <div class="entry">
+                <p class="name">yashika</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ53ZaNHCj1d2of1sd35f_PwE4_TgroyCAnQ&usqp=CAU" alt="dovelopers" />
+                <p class="quote">"Man, I think this app freaking rocks and stuff. Dude."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- using a footer -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!-- <div class="container my-5"> -->
+
+    <footer style="border-radius: 5px; " class=" text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div style="background:linear-gradient( rgb(52, 86, 139,90),rgb(19,27,17)); border-radius: 5px;"
+            class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                    <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                        style="width: 150px; height: 150px;">
+                        <img src="/images/footer_port.png" height="70" alt="" loading="lazy" />
+                    </div>
+
+                    <p class="text-center">A portfile is a important file for emergency and electronic digitally
+                        file threw domain.
+                    </p>
+
+                    <ul class="list-unstyled d-flex flex-row justify-content-center">
+                        <li>
+                            <a class="text-white px-2" href="#!">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white px-2" href="#!">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white ps-2" href="#!">
+                                <i class="fa  fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">PortFile link</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa fa-folder-open"></i>get a data
+                                missing</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa fa-folder-open"></i> Recently found</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa fa-folder-open"></i>How to adopt?</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">marks</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa fa-folder-open"></i>General
+                                information</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa fa-folder-open"></i>About the
+                                shelter</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa fa-folder-open"></i>Statistic data</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Contacts</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <p><i class="fa fa-phone pe-2"></i>9053613545</p>
+                        </li>
+                        <li>
+                            <p><i class="fa fa-envelope pe-2 mb-0"></i>Nareshchhonker449@gmail.com</p>
+                        </li>
+                    </ul>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                        <button class="subs_btn" type="submit">Subscribe</button>
+                    </span>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+
+            <p>All Right Reserve | &copy; 2022-23 design by PortFile
+                <strike style="color:rgb(172, 9, 79);">Naresh</strike>
+            </p>
+        </div>
+
+
+    </footer>
+
+      <!-- use a dark mode -->
+    <button class="dark_mode">
+        <i onclick="myFunction()" class="fa fa-moon-o" aria-hidden="true"></i>
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+    </button>
+
+    <!-- End of .container -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        style="background:linear-gradient(rgb(19,27,17),rgb(52,86,139)); border: 2px solid rgb(52, 86, 139); box-shadow: 5px 10px 15px rgb(52, 86, 139);"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+
+    <!-- use the chatbot  -->
+    <button class="open-button" onclick="openForm()"><img style="width: 30px; border-radius: 70px;"
+            src="/images/chat_icon.png" alt="chatbot"></button>
+
+
+    <div class="chat-popup" id="pop_chat">
+        <div class='chat_wrapper'>
+            <div id="dialogue"></div>
+            <form onSubmit="return chatbot.sendMessage()">
+                <div class="text-box">
+                    <input type="text" name="message" id="message" autocomplete="off" disabled
+                        placeholder="Please wait... loading...">
+                    <input style="background-color: rgb(45, 120, 169); color: aliceblue;" class="send-button"
+                        type="submit" value=">">
+                </div>
+            </form>
+        </div>
+        <button type="button" class="cancel_btn" onclick="closeForm()">X</button>
+
+    </div>
+
+    <!-- use link javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!-- use chat bot  -->
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/idewcomputing/code-chatbot/src/chatbot.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
